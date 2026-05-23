@@ -1,4 +1,4 @@
-# 설명가능한 AI 생성 이미지 탐지 시스템
+# AI 생성 이미지 탐지 시스템
 
 이 프로젝트는 업로드한 이미지가 **AI 생성 이미지**인지, 또는 **실제/사람 생성 이미지**인지 판별하는 이진 이미지 분류 연구 데모입니다. 단순히 `AI` / `Real` 결과만 출력하지 않고, 확률, confidence, uncertainty, heatmap, LLM 기반 자연어 설명까지 함께 제공하는 **XAI 기반 AI-generated image detection system**입니다.
 
