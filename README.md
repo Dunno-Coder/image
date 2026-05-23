@@ -16,7 +16,6 @@
 - gradient saliency heatmap 기반 시각적 설명
 - OpenAI API 또는 Ollama 기반 LLM 자연어 설명
 - 사용자 피드백 저장
-- 교수님 요구 분석 산출물 자동 생성 파이프라인
 - 한국어 원고 초안 생성
 
 ## 프로젝트 구조
