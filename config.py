@@ -11,7 +11,7 @@ BEST_BACKBONE_CONFIG_JSON = RESULTS_DIR / "best_backbone_config.json"
 FEEDBACK_DIR = ROOT_DIR / "feedback"
 FEEDBACK_CSV = FEEDBACK_DIR / "feedback.csv"
 
-SUPPORTED_DATASETS = ("genimage", "cifake", "ai_vs_real")
+SUPPORTED_DATASETS = ("ai_vs_real")
 SUPPORTED_MODELS = (
     "dinov3_linear",
     "siglip2_linear",

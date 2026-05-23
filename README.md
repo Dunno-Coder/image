@@ -370,28 +370,41 @@ Supported explanation providers:
 
 ```text
 none    -> rule-based explanation only
-openai  -> safe placeholder wrapper, falls back if not configured
-gemini  -> safe placeholder wrapper, falls back if not configured
-ollama  -> safe placeholder wrapper, falls back if not configured
+openai  -> OpenAI Responses API, falls back if not configured or unavailable
+gemini  -> placeholder, falls back to rule-based explanation
+ollama  -> local Ollama /api/generate endpoint, falls back if unavailable
 ```
 
 Environment variable examples:
 
 ```bash
 set OPENAI_API_KEY=your_key_here
+set OPENAI_MODEL=gpt-5.4-mini
 set GEMINI_API_KEY=your_key_here
 set OLLAMA_HOST=http://localhost:11434
+set OLLAMA_MODEL=llama3.1:8b
 ```
 
 PowerShell examples:
 
 ```powershell
 $env:OPENAI_API_KEY="your_key_here"
+$env:OPENAI_MODEL="gpt-5.4-mini"
 $env:GEMINI_API_KEY="your_key_here"
 $env:OLLAMA_HOST="http://localhost:11434"
+$env:OLLAMA_MODEL="llama3.1:8b"
 ```
 
-At this stage the external provider wrappers are intentionally safe placeholders. If a provider is missing or unavailable, Streamlit shows a warning and uses the rule-based explanation instead.
+The OpenAI path uses the Responses API and sends only structured prediction metadata, not the uploaded image. If a provider is missing or unavailable, Streamlit shows a warning and uses the rule-based explanation instead.
+
+In the Streamlit sidebar, choose:
+
+```text
+Explanation Mode = LLM-assisted
+LLM Provider = OpenAI API
+```
+
+You can either set `OPENAI_API_KEY` before launching Streamlit or paste the key into the sidebar password field for the current session. The key is not written to the feedback CSV or results files.
 
 ## EDL Output Interpretation
 
