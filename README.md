@@ -2,8 +2,6 @@
 
 이 프로젝트는 업로드한 이미지가 **AI 생성 이미지**인지, 또는 **실제/사람 생성 이미지**인지 판별하는 이진 이미지 분류 연구 데모입니다. 단순히 `AI` / `Real` 결과만 출력하지 않고, 확률, confidence, uncertainty, heatmap, LLM 기반 자연어 설명까지 함께 제공하는 **XAI 기반 AI-generated image detection system**입니다.
 
-기존 Streamlit 앱은 이미지 업로드와 예측을 담당하고, `analysis/` 디렉터리는 산출물 생성을 위한 독립 분석 파이프라인을 담당합니다. 분석 파이프라인은 기존 앱을 대체하지 않으며, 이미지 프로젝트를 억지로 tabular project로 바꾸지 않습니다. 대신 이미지 통계 특징과 vision backbone embedding을 사용해 TableOne, CCA, SHAP, LIME, subgroup analysis 등을 이미지 분류 문제에 맞게 적용합니다.
-
 ## 주요 기능
 
 - Streamlit 기반 이미지 업로드 UI
@@ -16,7 +14,6 @@
 - gradient saliency heatmap 기반 시각적 설명
 - OpenAI API 또는 Ollama 기반 LLM 자연어 설명
 - 사용자 피드백 저장
-- 한국어 원고 초안 생성
 
 ## 프로젝트 구조
 
