@@ -600,6 +600,5 @@ results/manuscript/draft.md
 - 이 프로젝트는 이미지 분류 프로젝트입니다. sklearn baseline은 raw pixel이 아니라 backbone embedding을 사용합니다.
 - LLM은 이미지를 직접 판별하지 않습니다. 분류 모델 결과를 일반인이 이해하기 쉽게 설명하는 역할만 합니다.
 - Heatmap은 보조 설명 자료이며, 단독으로 판정 근거를 확정하면 안 됩니다.
-- OpenAI API는 ChatGPT Plus와 별도 과금입니다.
 - Ollama는 로컬 PC 성능에 따라 응답 속도가 달라집니다.
 - SHAP, LIME, UMAP, statsmodels 기반 분석은 선택 패키지 설치 상태에 따라 실행 여부가 달라집니다.
