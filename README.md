@@ -195,8 +195,6 @@ streamlit run app.py
 
 ## OpenAI API 설명 사용
 
-OpenAI API는 ChatGPT Plus와 별도입니다. API 키는 [OpenAI Platform](https://platform.openai.com/)에서 발급하고, API 사용량은 별도로 과금됩니다.
-
 PowerShell에서 환경변수로 설정:
 
 ```powershell
